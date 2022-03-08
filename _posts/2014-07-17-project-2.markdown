@@ -1,11 +1,15 @@
 ---
 layout: default
+employer: UMBC Atmospheric LiDAR Group
+employer-url: https://ucn-portal.org/wiki/
+title: Lead Software Engineer
 modal-id: 2
-date: 2014-07-17
-img: cake.png
+start-date: Nov, 2019
+end-date: Jun, 2021
+img: atmosphere.png
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+role-1: Design and lead the development of a microservices architecture given loosely defined customer requirements
+role-2: Translate Matlab code intended for research to production-grade software
+role-3: Create tasks and organize team sprints and timeline based on business requirements
+role 4: Setup basic DevOps tools including deployment with AWS EC2
 ---

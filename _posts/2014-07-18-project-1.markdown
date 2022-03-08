@@ -1,11 +1,18 @@
 ---
 layout: default
+employer: Raytheon BBN
+employer-url: https://www.raytheonintelligenceandspace.com/what-we-do/bbn
+title: Research Engineer I
 modal-id: 1
-date: 2014-07-18
-img: cabin.png
+start-date: Jun 14, 2021
+end-date: present
+img: drone.png
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+role-1: Develop in-house testbed software to facilitate efficient data collection (software is currently being used by 3 different programs within the company)
+role-2: Create an automated pipeline to view and analyze radio frequency data
+role-3: Design and implement an automated on-board drone sensor software
+role-4: Develop an application for customer end-users to view flight paths of drones and high-altitude balloons
+role-5: Build backend for an automated query and store open-source data
+role-6: Produce various applications using software-defined radios
+role-7: Participate in a competitive business development initiative
 ---

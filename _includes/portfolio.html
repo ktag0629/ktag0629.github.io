@@ -1,0 +1,62 @@
+ <!-- Portfolio Modals -->
+ {% for post in site.posts %}
+    <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2> <a href={{post.employer-url}}> {{post.employer}} </a> </h2>
+                            <h3> {{ post.title }} </h3>
+                            <hr class="star-primary">
+                            <h4> {{ post.start-date }} - {{post.end-date}} </h4>
+                            <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                            {% if post.description %}
+                                <p>{{ post.description }}</p>
+                            {% endif %}
+                            <h5> Tasks and Roles </h5>
+                            <ul class="list-inline item-details">
+                                {% if post.role-1 %}
+                                <hr class="dotted">
+                                        <strong>  {{ post.role-1 }} </strong>
+                                {% endif %}
+                                {% if post.role-2 %}
+                                <hr class="dotted">
+                                        <strong>  {{ post.role-2 }} </strong>
+                                {% endif %}
+                                {% if post.role-3 %}
+                                <hr class="dotted">
+                                        <strong>  {{ post.role-3 }} </strong>
+                                {% endif %}
+                                {% if post.role-4 %}
+                                <hr class="dotted">
+                                        <strong>  {{ post.role-4 }} </strong>
+                                {% endif %}
+                                {% if post.role-5 %}
+                                <hr class="dotted">
+                                        <strong>  {{ post.role-5 }} </strong>
+                                {% endif %}
+                                {% if post.role-6 %}
+                                <hr class="dotted">
+                                        <strong>  {{ post.role-6 }} </strong>
+                                {% endif %}
+                                {% if post.role-7 %}
+                                <hr class="dotted">
+                                        <strong>  {{ post.role-7 }} </strong>
+                                {% endif %}
+                                <br>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}
