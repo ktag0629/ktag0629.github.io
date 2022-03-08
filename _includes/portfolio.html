@@ -15,40 +15,69 @@
                             <h2> <a href={{post.employer-url}}> {{post.employer}} </a> </h2>
                             <h3> {{ post.title }} </h3>
                             <hr class="star-primary">
-                            <h4> {{ post.start-date }} - {{post.end-date}} </h4>
                             <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
                             {% if post.description %}
                                 <p>{{ post.description }}</p>
                             {% endif %}
-                            <h5> Tasks and Roles </h5>
                             <ul class="list-inline item-details">
-                                {% if post.role-1 %}
-                                <hr class="dotted">
-                                        <strong>  {{ post.role-1 }} </strong>
+                                {% if post.experience %}
+                                    <h4> {{ post.start-date }} - {{post.end-date}} </h4>
+                                    <h5> Tasks and Roles </h5>
+                                    {% if post.role-1 %}
+                                    <hr class="dotted">
+                                            <strong>  {{ post.role-1 }} </strong>
+                                    {% endif %}
+                                    {% if post.role-2 %}
+                                    <hr class="dotted">
+                                            <strong>  {{ post.role-2 }} </strong>
+                                    {% endif %}
+                                    {% if post.role-3 %}
+                                    <hr class="dotted">
+                                            <strong>  {{ post.role-3 }} </strong>
+                                    {% endif %}
+                                    {% if post.role-4 %}
+                                    <hr class="dotted">
+                                            <strong>  {{ post.role-4 }} </strong>
+                                    {% endif %}
+                                    {% if post.role-5 %}
+                                    <hr class="dotted">
+                                            <strong>  {{ post.role-5 }} </strong>
+                                    {% endif %}
+                                    {% if post.role-6 %}
+                                    <hr class="dotted">
+                                            <strong>  {{ post.role-6 }} </strong>
+                                    {% endif %}
+                                    {% if post.role-7 %}
+                                    <hr class="dotted">
+                                            <strong>  {{ post.role-7 }} </strong>
+                                    {% endif %}
                                 {% endif %}
-                                {% if post.role-2 %}
-                                <hr class="dotted">
-                                        <strong>  {{ post.role-2 }} </strong>
-                                {% endif %}
-                                {% if post.role-3 %}
-                                <hr class="dotted">
-                                        <strong>  {{ post.role-3 }} </strong>
-                                {% endif %}
-                                {% if post.role-4 %}
-                                <hr class="dotted">
-                                        <strong>  {{ post.role-4 }} </strong>
-                                {% endif %}
-                                {% if post.role-5 %}
-                                <hr class="dotted">
-                                        <strong>  {{ post.role-5 }} </strong>
-                                {% endif %}
-                                {% if post.role-6 %}
-                                <hr class="dotted">
-                                        <strong>  {{ post.role-6 }} </strong>
-                                {% endif %}
-                                {% if post.role-7 %}
-                                <hr class="dotted">
-                                        <strong>  {{ post.role-7 }} </strong>
+
+                                <!--- PROJECTS --> 
+
+                                {% if post.project %}
+                                    {% if post.summary %}
+                                        <h4> summary </h4>
+                                        <p> {{ post.summary }} </p>
+                                        {% if post.image %}
+                                            <img src="img/portfolio/{{ post.image }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                                        {% endif %}
+                                        {% if post.image2 %}
+                                            <img src="img/portfolio/{{ post.image2 }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                                        {% endif %}
+                                    {% endif %}
+                                    <hr class="dotted">
+                                    {% if post.highlights %}
+                                        <h4> highlights </h4>
+                                        <p> {{ post.proj-1 }} </P>
+                                        <br>
+                                        <p> {{ post.proj-2 }} </p>
+                                    {% endif %}
+                                    <hr class="solid">
+                                    <h4> Tools </h4>
+                                    <p> <b> Languages: </b> {{ post.languages }} </p>
+                                    <p> <b> Frameworks/Libs: </b> {{ post.tools }} </p> 
+                                    <p> <b> Operating Systems: </b> {{ post.os }} </p>
                                 {% endif %}
                                 <br>
                             </ul>

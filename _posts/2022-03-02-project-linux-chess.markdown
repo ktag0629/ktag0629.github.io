@@ -1,13 +1,9 @@
 ---
-experience: 1
+project: 1
+modal-id: 7
+employer: Linux Chess Dev
 layout: default
-employer: Raytheon BBN
-employer-url: https://www.raytheonintelligenceandspace.com/what-we-do/bbn
-title: Research Engineer I
-modal-id: 1
-start-date: Jun 14, 2021
-end-date: present
-img: drone.png
+img: chess.png
 alt: image-alt
 role-1: Develop in-house testbed software to facilitate efficient data collection (software is currently being used by 3 different programs within the company)
 role-2: Create an automated pipeline to view and analyze radio frequency data

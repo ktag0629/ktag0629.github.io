@@ -1,4 +1,5 @@
 ---
+experience: 1
 layout: default
 employer: UMBC Atmospheric LiDAR Group
 employer-url: https://ucn-portal.org/wiki/
